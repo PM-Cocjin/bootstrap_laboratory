@@ -6,26 +6,39 @@
   <title>Personal Website</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Hero Section Background */
-    .hero {
-      background-image: url('backgrounds/background121.jpg'); 
+    /* Full Page Background */
+    body {
+      background-image: url('background121.jpg'); /* Replace with your image URL */
       background-size: cover;
       background-position: center;
+      background-attachment: fixed;
       color: white;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     }
 
-    /* Featured Sections Background */
-    .featured {
-      background-color: #f8f9fa;
-      padding: 2rem 0;
+    /* Blur Effect */
+    .blur-overlay {
+      backdrop-filter: blur(10px); /* Apply blur effect */
+      background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent dark overlay */
+      border-radius: 10px;
+      padding: 20px;
     }
 
-    /* Footer Background */
+    /* Transparent Rows/Columns */
+    .transparent {
+      background-color: rgba(255, 255, 255, 0.2); 
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    /* Rounded Borders for Images */
+    .square {
+      border: 2px solid darkslateblue; 
+      border-radius: 15px; 
+      padding: 5px; 
+    }
+
+    /* Footer Styling */
     footer {
-      background-image: url('https://via.placeholder.com/1920x200'); /* Replace with your image URL */
-      background-size: cover;
-      background-position: center;
       color: white;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
@@ -52,44 +65,42 @@
   </nav>
 
   <!-- Row 2: Banner/Hero Section -->
-  <section class="hero text-center p-5">
-    <div class="container">
+  <section class="container my-5">
+    <div class="blur-overlay text-center">
       <h1>Hi! Welcome to My Website</h1>
       <p class="lead">Your one-stop destination to know more about me and my work</p>
     </div>
   </section>
 
   <!-- Row 3: Featured Sections/Skills -->
-  <section class="featured">
-    <div class="container py-4">
-      <div class="row text-center">
-        <div class="col-md-3">
-          <img src="https://via.placeholder.com/150" alt="Problem Solving" class="img-fluid rounded-circle mb-3">
-          <h4>Problem Solving</h4>
-          <p>I think outside the box and think critically before I decide on decisions</p>
-        </div>
-        <div class="col-md-3">
-          <img src="https://via.placeholder.com/150" alt="Workaholic" class="img-fluid rounded-circle mb-3">
-          <h4>Workaholic</h4>
-          <p>I love to work</p>
-        </div>
-        <div class="col-md-3">
-          <img src="https://via.placeholder.com/150" alt="Collaborative" class="img-fluid rounded-circle mb-3">
-          <h4>Collaborative</h4>
-          <p>I work great in team environments exhibiting my social prowess and skills</p>
-        </div>
-        <div class="col-md-3">
-          <img src="https://via.placeholder.com/150" alt="Adaptable" class="img-fluid rounded-circle mb-3">
-          <h4>Adaptable</h4>
-          <p>I can quickly change form and adapt to any situation thrown in my way</p>
-        </div>
+  <section class="container my-5">
+    <div class="row text-center transparent">
+      <div class="col-md-3">
+        <img src="hard working.jpg" alt="Problem Solving" class="img-fluid square mb-3">
+        <h4>Problem Solving</h4>
+        <p>I think outside the box and think critically before I decide on decisions</p>
+      </div>
+      <div class="col-md-3">
+        <img src="workaholic.jpg" alt="Workaholic" class="img-fluid square mb-3">
+        <h4>Workaholic</h4>
+        <p>I love to work</p>
+      </div>
+      <div class="col-md-3">
+        <img src="collaborative.jpg" alt="Collaborative" class="img-fluid square mb-3">
+        <h4>Collaborative</h4>
+        <p>I work great in team environments exhibiting my social prowess and skills</p>
+      </div>
+      <div class="col-md-3">
+        <img src="yns.jpg" alt="Adaptable" class="img-fluid square mb-3">
+        <h4>Adaptable</h4>
+        <p>I can quickly change form and adapt to any situation thrown in my way</p>
       </div>
     </div>
   </section>
 
   <!-- Row 4: Content Area -->
-  <section class="container py-4">
-    <div class="row">
+  <section class="container my-5">
+    <div class="row transparent">
       <div class="col-md-6">
         <h3>About Me</h3>
         <p>I am a hardworking and dedicated person that is adaptable and collaborative when it comes to projects. 
